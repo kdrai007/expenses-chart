@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+:root {
+  --Soft-red: hsl(10, 79%, 65%);
+  --Cyan: hsl(186, 34%, 60%);
+
+  /* ### Neutral */
+
+  --Dark-brown: hsl(25, 47%, 15%);
+  --Medium-brown: hsl(28, 10%, 53%);
+  --Cream: hsl(27, 66%, 92%);
+  --Very-pale-orange: hsl(33, 100%, 98%);
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: var(--Cream);
+  font-family: "DM Sans", sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+  gap: 15px;
+}
+p {
+  font-size: 18px;
+}
+.top {
+  background-color: var(--Soft-red);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 22rem;
+  padding: 18px;
+  border: none;
+  border-radius: 10px;
+}
+.balance {
+  display: flex;
+  flex-direction: column;
+}
+.balance > p {
+  font-size: 11px;
+  line-height: 2;
+  color: var(--Cream);
+}
+.balance > strong {
+  font-size: 1.3rem;
+}
+img {
+  width: 54px;
+}
+.bottom {
+  background-color: var(--Very-pale-orange);
+  width: 22rem;
+  height: 21rem;
+  padding: 18px;
+  color: black;
+  border: none;
+  border-radius: 10px;
+}
+
+.bottom > h1 {
+  font-size: 20px;
+}
+.bottom > hr {
+  margin: 20px 0;
+  border-color: var(--Very-pale-orange);
+}
+.stats {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  text-align: center;
+  height: 10rem;
+}
+.stats > .day > p {
+  font-size: 11px;
+  margin-top: 2px;
+  color: rgb(107, 103, 103);
+}
+.stats > .day {
+  display: flex;
+  flex-direction: column;
+}
+.day > div {
+  background-color: var(--Soft-red);
+  width: 30px;
+  border: none;
+  border-radius: 3px;
+}
+/* .day > div:hover {
+  background-color: var(--Cyan);
+} */
+.d-1 {
+  height: 50px;
+}
+.d-2 {
+  height: 30px;
+}
+.d-3 {
+  height: 40px;
+}
+.d-4 {
+  height: 90px;
+  background-color: var(--Cyan) !important;
+}
+.d-5 {
+  height: 60px;
+}
+.d-6 {
+  height: 70px;
+}
+.d-7 {
+  height: 50px;
+}
+.res-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.res-summary p {
+  font-size: 13px;
+  color: gray;
+  font-weight: 500;
+}
