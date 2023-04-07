@@ -88,28 +88,37 @@ img {
 .stats > .day {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .day > div {
   background-color: var(--Soft-red);
   width: 30px;
   border: none;
   border-radius: 3px;
+  cursor: pointer;
 }
 /* .day > div:hover {
   background-color: var(--Cyan);
 } */
+.stats > .day > .amount {
+  background-color: black;
+  color: white;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+}
 .d-1 {
-  height: 50px;
+  height: 35px;
 }
 .d-2 {
-  height: 30px;
+  height: 65px;
 }
 .d-3 {
-  height: 40px;
+  height: 100px;
+  background-color: var(--Cyan) !important;
 }
 .d-4 {
-  height: 90px;
-  background-color: var(--Cyan) !important;
+  height: 70px;
 }
 .d-5 {
   height: 60px;
@@ -129,4 +138,43 @@ img {
   font-size: 13px;
   color: gray;
   font-weight: 500;
+}
+@media screen and (max-width: 500px) {
+  .top {
+    height: 6rem;
+  }
+  .balance p {
+    font-size: 15px;
+  }
+  .balance strong {
+    font-size: 1.5rem;
+  }
+  .bottom {
+    height: 25rem;
+  }
+  .stats {
+    height: 14rem;
+  }
+  .d-1 {
+    height: 45px;
+  }
+  .d-2 {
+    height: 75px;
+  }
+  .d-3 {
+    height: 115px;
+    background-color: var(--Cyan) !important;
+  }
+  .d-4 {
+    height: 85px;
+  }
+  .d-5 {
+    height: 65px;
+  }
+  .d-6 {
+    height: 80px;
+  }
+  .d-7 {
+    height: 55px;
+  }
 }
