@@ -38,7 +38,7 @@ window.onload = function () {
         if (d.day === e.children[1].textContent) {
           const text = document.createElement("p");
           text.classList.add("amount");
-          text.textContent = d.amount;
+          text.textContent = "$"+d.amount;
           e.insertBefore(text, e.firstChild);
           setTimeout(() => {
             e.removeChild(e.firstChild);
